@@ -1,0 +1,5 @@
+'use strict';
+const demo=[['Vestido Vinho Midi',1,8],['Camisa Seda Champagne',2,12],['Calça Alfaiataria Noir',3,6],['Tricot Azul Noite',4,10],['Saia Plissada Bordeaux',5,7],['Vestido Midnight',6,5],['Camisa Ivory',7,9],['Calça Wide Leg Vinho',8,4]];
+let saved={};try{saved=JSON.parse(localStorage.getItem('lovynni-stock-v2'))||{}}catch{}
+const list=document.getElementById('stockList');demo.forEach(([name,id,qty])=>{const row=document.createElement('div');row.className='admin-row';const label=document.createElement('label');label.textContent=name;const input=document.createElement('input');input.type='number';input.min='0';input.max='9999';input.value=Number.isFinite(Number(saved[id]))?saved[id]:qty;input.dataset.id=id;label.appendChild(input);row.appendChild(label);list.appendChild(row)});
+document.getElementById('saveStock').addEventListener('click',()=>{const next={};document.querySelectorAll('[data-id]').forEach(el=>{next[el.dataset.id]=Math.max(0,Math.floor(Number(el.value)||0))});localStorage.setItem('lovynni-stock-v2',JSON.stringify(next));alert('Estoque demonstrativo salvo neste navegador.');});

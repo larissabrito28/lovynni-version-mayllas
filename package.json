@@ -1,0 +1,1 @@
+{"name":"lovynni-store-demo","version":"1.0.0","private":true,"description":"Protótipo da loja LOVYNNI inspirado na estrutura Maylas Bridal","scripts":{"start":"npx serve ."}}

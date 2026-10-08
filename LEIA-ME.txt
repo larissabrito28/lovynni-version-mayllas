@@ -1,0 +1,9 @@
+LOVYNNI — Versão Bordeaux + Minha Conta
+
+Abra index.html com Live Server.
+
+O site funciona em modo visitante, com favoritos e sacola salvos neste navegador.
+Para ativar cadastro/login real e sincronização de favoritos/sacola entre dispositivos, leia CONFIGURAR-FIREBASE.md.
+Não use o Firebase do projeto Maylas Bridal.
+Histórico de pedidos e pagamento ainda não estão implementados.
+O painel administrativo é apenas uma demonstração local.
