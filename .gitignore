@@ -1,0 +1,26 @@
+# Dependências
+node_modules/
+
+# Chaves e segredos — NUNCA comitar valores reais
+serviceAccount.json
+*.serviceAccount.json
+.env
+.env.*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build
+dist/
+build/
